@@ -2,11 +2,14 @@ import java.util.Scanner;
 class Book
 {
 String name,author;double price;int num_pages;
-void Book(){
+Book(){
 name="";author="";price=0.0;num_pages=0;}
 
-void set(String nme,String authr,double pric,int pages){
+Book(String nme,String authr,double pric,int pages){
 this.name=nme;this.author=authr;this.price=pric;this.num_pages=pages;}
+
+/*void set(String nme,String authr,double pric,int pages){
+this.name=nme;this.author=authr;this.price=pric;this.num_pages=pages;}*/
 
 /*void display(){
 System.out.println("Name of the book:"+name);
@@ -36,8 +39,8 @@ System.out.println("Enter the price of the book:");
 pric=sc.nextDouble();
 System.out.println("Enter the number of pages of the book:");
 pages=sc.nextInt();
-a[i]=new Book();
-a[i].set(nme,authr,pric,pages);}
+a[i]=new Book(nme,authr,pric,pages);
+/*a[i].set(nme,authr,pric,pages);*/}
 for(int i=0;i<n;i++){
 System.out.println(a[i].toString());
 }
